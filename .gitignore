@@ -1,0 +1,4 @@
+ocean/pendulum6/libpendulum6.so
+ocean/pendulum6/test_physics
+__pycache__/
+*.pyc
