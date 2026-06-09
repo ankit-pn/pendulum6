@@ -5,7 +5,9 @@ trained with [PufferLib 4.0](https://github.com/PufferAI/PufferLib)'s CUDA PPO
 backend. 1 billion environment steps in ~6 minutes on a single RTX 4090
 (3.4M steps/sec), roughly $0.50 of RunPod GPU time.
 
-![demo](artifacts/pendulum6_balance.mp4)
+![demo](artifacts/preview.gif)
+
+*(full 3-episode video: [artifacts/pendulum6_balance.mp4](artifacts/pendulum6_balance.mp4))*
 
 ## Result
 
