@@ -93,6 +93,19 @@ linearly by element index — so the 1-float logstd leaves a 7-element padding
 gap before the GRU weights, and the final 7 GRU weights are permanently zero.
 `eval_policy.py:load_flat` handles this.
 
+
+## Part 2: the FREE-JOINT version
+
+The elastic joints above were load-bearing — so we removed them. See
+[freejoint/](freejoint/) for the sequel: a fully free-jointed 6-link chain
+that **swings itself up from hanging (100/100 episodes)** and dynamically
+balances in repeated ~0.5 s catches, trained with a self-paced reverse
+curriculum instead of hyperparameter search (~$2 of GPU time, single config).
+Includes the impossibility analysis for static balance of free chains and the
+~9 e-fold hold-time law we found along the way.
+
+![freejoint demo](freejoint/artifacts/preview.gif)
+
 ## License
 
 Environment and tooling code in this repo: MIT. PufferLib itself is licensed
